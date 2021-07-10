@@ -22,6 +22,12 @@ halfmoon.toggleDarkMode = function() {
     }
 };
 
+function matchBacklinksToPreferredMode() {
+    if (halfmoon.darkModeOn) {
+        addOrRemoveDarkModeFromBacklink("add")
+    }
+}
+
 // Set .active class on current Link in Sidebar
 document.addEventListener("DOMContentLoaded", function() {
     // Getting the required elements
@@ -29,4 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var activeDocsSectionSidebarMenuItem = document.getElementById("sidebar-" + docsSectionId);
     // Adding the active class to the sidebar menu item
     activeDocsSectionSidebarMenuItem.classList.add("active");
+
+    matchBacklinksToPreferredMode()
 });
