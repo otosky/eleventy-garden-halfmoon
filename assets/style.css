@@ -3,52 +3,52 @@
     --grey: #444;
 }
 
-html {
-    font-size:  100%;
-    scroll-behavior: smooth;
-}
+/*html {*/
+/*    font-size:  100%;*/
+/*    scroll-behavior: smooth;*/
+/*}*/
 
-body {
-    font-family: Inter, sans-serif;
-    line-height: 1.65;
-    
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+/*body {*/
+/*    font-family: Inter, sans-serif;*/
+/*    line-height: 1.65;*/
+/*    */
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    min-height: 100vh;*/
 
-    margin: 0 24px;
-}
+/*    margin: 0 24px;*/
+/*}*/
 
-@media only screen and (max-width: 468px) {
-    .page-header {
-        flex-direction: column;
-    }
-}
+/*@media only screen and (max-width: 468px) {*/
+/*    .page-header {*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
 
-.page-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 8px;
-}
+/*.page-header {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    margin-top: 8px;*/
+/*}*/
 
-.page-header nav a:not(:hover):not(:focus) {
-    color: currentColor;
-    text-decoration: none;
-}
+/*.page-header nav a:not(:hover):not(:focus) {*/
+/*    color: currentColor;*/
+/*    text-decoration: none;*/
+/*}*/
 
-nav a {
-    margin: 0 12px;
-    font-size: 1.25em;
-}
+/*nav a {*/
+/*    margin: 0 12px;*/
+/*    font-size: 1.25em;*/
+/*}*/
 
-main {
-    flex-grow: 1;
-    max-width: 60ch;
-    width: 100%;
-    margin: 0 auto;
-}
+/*main {*/
+/*    flex-grow: 1;*/
+/*    max-width: 60ch;*/
+/*    width: 100%;*/
+/*    margin: 0 auto;*/
+/*}*/
 
 .page-footer {
     text-align: center;
