@@ -21,6 +21,10 @@ module.exports = function(eleventyConfig) {
             }
         })
     })
+
+    md.renderer.rules.table_open = function (tokens, idx, options, env, self) {
+        return '<table class="table">\n';
+    }
     
     eleventyConfig.addFilter("markdownify", string => {
         return md.render(string)
