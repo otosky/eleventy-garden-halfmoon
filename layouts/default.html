@@ -10,7 +10,7 @@
 <input type="hidden" name="docs-section-id" id="docs-section-id" value="{{title}}">
 
 <!-- Page wrapper start -->
-<div class="page-wrapper with-navbar with-sidebar">
+<div class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom">
 
     <!-- Navbar start -->
     <nav class="navbar">
@@ -38,12 +38,16 @@
           2. https://www.gethalfmoon.com/docs/grid-system/#building-a-dashboard
         -->
         {{content}}
+
     </div>
     <!-- Content wrapper end -->
+    <nav class="navbar navbar-fixed-bottom justify-content-center">
+        <a href="{{site.github}}" class="navbar-link">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+    </nav>
 
-    <footer class="page-footer">
-        <small>Copyright {{site.author}}</small>
-    </footer>
+
 </div>
 <!-- Page wrapper end -->
 
