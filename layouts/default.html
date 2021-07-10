@@ -5,18 +5,30 @@
 </head>
 <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true"
       data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
+
+<!-- Documentation section id (hidden) -->
+<input type="hidden" name="docs-section-id" id="docs-section-id" value="{{title}}">
+
 <!-- Page wrapper start -->
 <div class="page-wrapper with-navbar with-sidebar">
 
-        <!-- Navbar start -->
-        <nav class="navbar">
-            <!-- Reference: https://www.gethalfmoon.com/docs/navbar -->
-            <a href="/" class="page-header__logo" title="Go home">
-                <img src="/assets/avatar.png" alt="" width="48">
-            </a>
-            <a href="/">Home</a>
-        </nav>
-        <!-- Navbar end -->
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <!-- Reference: https://www.gethalfmoon.com/docs/navbar -->
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+        <ul class="navbar-nav d-none d-md-flex">
+            <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+
+    <div class="sidebar">
+        {% include sidebar.html %}
+    </div>
     <!-- Content wrapper start -->
     <div class="content-wrapper">
         <!--

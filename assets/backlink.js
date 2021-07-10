@@ -20,4 +20,13 @@ halfmoon.toggleDarkMode = function() {
         this.darkModeOn = true;
         this.createCookie("halfmoon_preferredMode", "dark-mode", 365);
     }
-}
+};
+
+// Set .active class on current Link in Sidebar
+document.addEventListener("DOMContentLoaded", function() {
+    // Getting the required elements
+    var docsSectionId = document.getElementById("docs-section-id").value;
+    var activeDocsSectionSidebarMenuItem = document.getElementById("sidebar-" + docsSectionId);
+    // Adding the active class to the sidebar menu item
+    activeDocsSectionSidebarMenuItem.classList.add("active");
+});

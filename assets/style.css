@@ -3,6 +3,10 @@
     --grey: #444;
 }
 
+.content-wrapper {
+    padding-left: 2%;
+}
+
 /*html {*/
 /*    font-size:  100%;*/
 /*    scroll-behavior: smooth;*/
