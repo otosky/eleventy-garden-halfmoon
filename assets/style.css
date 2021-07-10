@@ -144,7 +144,16 @@ small {font-size: 0.8em;}
     content: "";
     position: absolute;
     bottom: 0;
-    background: linear-gradient(transparent, white);
+    background: linear-gradient(transparent, var(--lm-base-body-bg-color));
+    width: 100%;
+    height: 24px;
+}
+
+.backlink__preview.dark-mode::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(transparent, var(--dm-base-body-bg-color));
     width: 100%;
     height: 24px;
 }
