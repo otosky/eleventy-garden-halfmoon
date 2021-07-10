@@ -1,27 +1,27 @@
 {% assign metatitle = site.title %}
 
 {% if type == "note" %}
-    {% assign metatitle = site.author | append: "'s Notes" %}
+{% assign metatitle = site.author | append: "'s Notes" %}
 {% endif %}
 
 {% if title %}
-    {% assign metatitle = metatitle | prepend: " • " | prepend: title %}
+{% assign metatitle = metatitle | prepend: " • " | prepend: title %}
 {% endif %}
 
 {% assign metadesc = site.desc %}
 {% if desc %}
-    {% assign metadesc = desc %}
+{% assign metadesc = desc %}
 {% endif %}
 
 {% assign metatype = "website" %}
 {% if type == "note" %}
-    {% assign metatype = "article" %}
+{% assign metatype = "article" %}
 {% endif %}
 
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-<meta name="viewport" content="width=device-width" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+<meta name="viewport" content="width=device-width"/>
 
 <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
@@ -41,10 +41,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
 
 <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 <!-- Halfmoon CSS -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css"/>
 
 <link rel="stylesheet" href="/assets/style.css">
