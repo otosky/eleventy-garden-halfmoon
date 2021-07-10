@@ -55,9 +55,9 @@
     margin-bottom: 8px;
 }
 
-a[href] {
-    color: var(--accent);
-}
+/*a[href] {*/
+/*    color: var(--accent);*/
+/*}*/
 
 a[href]:hover {
     text-decoration: none;
@@ -110,11 +110,10 @@ small {font-size: 0.8em;}
 
 .backlink__preview {
     display: none;
-    
     position: absolute;
     bottom: 8px;
     left: 100%;
-    background-color: #fff;
+    background-color: var(--lm-base-body-bg-color);
     border-radius: 4px;
     padding: 4px;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
@@ -122,6 +121,21 @@ small {font-size: 0.8em;}
     max-height: 148px;
     overflow: hidden;
 }
+
+.backlink__preview.dark-mode {
+    display: none;
+    position: absolute;
+    bottom: 8px;
+    left: 100%;
+    background-color: var(--dm-base-body-bg-color);
+    border-radius: 4px;
+    padding: 4px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+    width: 348px;
+    max-height: 148px;
+    overflow: hidden;
+}
+
 .backlink__preview::after {
     content: "";
     position: absolute;
@@ -132,6 +146,12 @@ small {font-size: 0.8em;}
 }
 
 .backlink__preview h1 {
+    font-size: 2.5rem;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.backlink__preview h2 {
     font-size: 1.2rem;
     margin-top: 8px;
     font-weight: bold;
