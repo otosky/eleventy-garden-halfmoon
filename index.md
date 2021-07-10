@@ -1,5 +1,10 @@
 ---
 layout: default
+title: Home
 ---
-# Hi
-I'm John Lemmon. I'm an umpteen year-old developer and musician from Liverpool, England.
+# Title
+
+## Contents
+
+- [[Note A]]
+- [[Note B]]
