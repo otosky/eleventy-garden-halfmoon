@@ -100,7 +100,7 @@ small {font-size: 0.8em;}
 
 /* backlinks */
 .backlinks-title {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .backlinks-container {
