@@ -18,7 +18,12 @@ module.exports = function (eleventyConfig) {
                     const parts = match.raw.slice(2, -2).split("|");
                     parts[0] = parts[0].replace(/.(md|markdown)\s?$/i, "");
                     match.text = (parts[1] || parts[0]).trim();
-                    match.url = `/notes/${parts[0].trim()}/`;
+                    if (match.text === "Home") {
+                        match.url = "/"
+                    } else {
+                        match.url = `/notes/${parts[0].trim()}/`
+                    }
+
                 }
             })
         })
@@ -29,6 +34,11 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addFilter("markdownify", string => {
         return md.render(string)
+    })
+
+    eleventyConfig.addFilter("sortByTitle", values => {
+        let vals = [...values]
+        return vals.sort((a, b) => a.data.title.localeCompare(b.data.title));
     })
 
     eleventyConfig.setLibrary('md', md);
