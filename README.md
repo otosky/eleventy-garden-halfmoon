@@ -7,7 +7,7 @@ Forked from [eleventy-garden](https://github.com/binyamin/eleventy-garden).
 ## :house: About
 - Allows for Double-bracket wiki-style links [[]] like Obsidian.
 - Displays backlinks and hover-to-preview.
-- Toggle dark :new_moon: and light :high_brightness: mode with `SHIFT+D`.
+- Toggle dark :new_moon: &nbsp; and light :high_brightness: &nbsp; mode with `SHIFT+D`.
 - Toggle sidebar with links to your notes `SHIFT+S`
 
 ## :heart: Contribute
