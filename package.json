@@ -1,22 +1,22 @@
 {
-  "name": "eleventy-garden",
+  "name": "eleventy-garden-halfmoon",
   "version": "1.0.0",
-  "description": "A starter site for building a mind garden in eleventy.",
+  "description": "A starter site for building a mind garden in eleventy & halfmoon.",
   "scripts": {
     "start": "eleventy --serve --quiet",
     "compile": "eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/binyamin/eleventy-garden.git"
+    "url": "git+https://github.com/otosky/eleventy-garden-halfmoon.git"
   },
   "keywords": [],
-  "author": "Binyamin Aron Green (https://binyam.in/)",
+  "author": "Oliver Tosky",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/binyamin/eleventy-garden/issues"
+    "url": "https://github.com/otosky/eleventy-garden-halfmoon/issues"
   },
-  "homepage": "https://github.com/binyamin/eleventy-garden#readme",
+  "homepage": "https://github.com/otosky/eleventy-garden-halfmoon#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0-canary.23",
     "markdown-it": "^12.0.6",
