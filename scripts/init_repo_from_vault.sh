@@ -11,7 +11,7 @@ copy_notes_from_vault() {
 }
 
 move_index_to_repo_root() {
-  mv ./notes/index.md ./
+  cp ./notes/index.md ./
 }
 
 main() {
