@@ -16,7 +16,7 @@
     <nav class="navbar">
         <!-- Reference: https://www.gethalfmoon.com/docs/navbar -->
         <a href="{{ '/' | url }}" class="page-header__logo" title="Go home">
-            <img src="{{ '/assets/' | prepend: site.brand-icon | url }}" alt="" width="60">
+            <img src="{{ '/assets/' | append: site.brand-icon | url }}" alt="" width="60">
         </a>
         <ul class="navbar-nav d-none d-md-flex">
             <li class="nav-item">
