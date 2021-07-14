@@ -19,9 +19,9 @@ module.exports = function (eleventyConfig) {
                     parts[0] = parts[0].replace(/.(md|markdown)\s?$/i, "");
                     match.text = (parts[1] || parts[0]).trim();
                     if (match.text === "Home") {
-                        match.url = "."
+                        match.url = "/"
                     } else {
-                        match.url = `notes/${parts[0].trim()}`
+                        match.url = `/notes/${parts[0].trim()}/`
                     }
 
                 }
