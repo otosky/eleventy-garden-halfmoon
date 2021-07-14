@@ -1,6 +1,6 @@
 <div class="sidebar-menu">
     <!-- Reference: https://www.gethalfmoon.com/docs/sidebar -->
-    <a href="/" class="sidebar-link sidebar-link-with-icon" id="sidebar-Home">
+    <a href="{{'/' | url}}" class="sidebar-link sidebar-link-with-icon" id="sidebar-Home">
         <span class="sidebar-icon">
             <i class="fas fa-home" aria-hidden="true"></i>
         </span>
@@ -11,7 +11,7 @@
     {% assign sidebarNotes = collections.notes | sortByTitle %}
     {% for note in sidebarNotes %}
     {% if note.data.title != "Home" %}
-    <a href="{{note.url}}" class="sidebar-link sidebar-link-with-icon" id="sidebar-{{note.data.title}}">
+    <a href="{{note.url | url}}" class="sidebar-link sidebar-link-with-icon" id="sidebar-{{note.data.title}}">
         {{note.data.title}}
     </a>
     {% endif %}

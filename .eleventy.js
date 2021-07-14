@@ -21,9 +21,8 @@ module.exports = function (eleventyConfig) {
                     if (match.text === "Home") {
                         match.url = "/"
                     } else {
-                        match.url = `/notes/${parts[0].trim()}/`
+                        match.url = `notes/${parts[0].trim()}/`
                     }
-
                 }
             })
         })
